@@ -86,7 +86,9 @@ of objects containing details about a package. For example,
             "version": "1.2.0",
             "repository": "git@github.com:Masterminds/cookoo.git",
             "type": "git",
-            "updateTime": "2015-04-09T05:06:17-08:00"
+            "updateTime": "2015-04-09T05:06:17-08:00",
+            "arch": ["windows"],
+            "os": ["386"]
         }
     ]
 }
@@ -110,6 +112,9 @@ The `repository` and `type` information are useful for a couple reasons includin
 
 The `updateTime` is useful to know when the package was last updated. This would
 be typically updated and otherwise managed by the tooling.
+
+The `arch` and `os` optional properties allow you to filter the operating systems
+and architectures to install a package with.
 
 ## Vendoring?
 
