@@ -11,3 +11,6 @@ install each of them.
 The packages defined in the `pkg.json` file will be consistently installed in
 each environment. That includes those that define a repository, as outlined
 in the [private repository use case](work_with_private_packages.md).
+
+When forks are used, and need to be used consistently by the whole team, this
+works with the [forking use case](working_with_forks.md).
