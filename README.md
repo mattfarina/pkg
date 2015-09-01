@@ -40,6 +40,7 @@ Some information describes the package itself. For example,
 ```json
 {
     "name": "github.com/Masterminds/glide",
+    "image": "logo.png",
     "description": "A package manager for Go.",
     "keywords": ["vendor", "package", "VCS"],
     "homepage": "https://example.com",
