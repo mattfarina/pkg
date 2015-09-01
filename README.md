@@ -87,8 +87,8 @@ of objects containing details about a package. For example,
             "repository": "git@github.com:Masterminds/cookoo.git",
             "type": "git",
             "updateTime": "2015-04-09T05:06:17-08:00",
-            "arch": ["windows"],
-            "os": ["386"]
+            "arch": ["386"],
+            "os": ["windows"]
         }
     ]
 }
