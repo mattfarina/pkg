@@ -1,7 +1,10 @@
 # Go Package Specification
 
-This outlines a proposed specification for documenting the metadata associated
-with a Go package described in a `pkg.json` file.
+This outlines a proposed manner for documenting the metadata associated
+with a Go package. The current examples use json but that's not a requirement.
+Instead, the goal is to solve the [use cases](use_cases). Proposed changes
+are welcome. The goal is to be able to solve the use cases rather than stick
+to one way of doing things.
 
 For example,
 ```json
