@@ -90,9 +90,6 @@ of objects containing details about a package. For example,
             "version": "1.2.0",
             "repository": "git@github.com:Masterminds/cookoo.git",
             "type": "git",
-            "updateTime": "2015-04-09T05:06:17-08:00",
-            "arch": ["386"],
-            "os": ["windows"],
             "flatten": true
         }
     ]
@@ -114,12 +111,6 @@ The `repository` and `type` information are useful for a couple reasons includin
 2. Forks. For example what if the `repository` were `git@github.com:mattfarina/cookoo.git`.
 3. When you want to checkout a dependency in a manner you can commit and push
    changes while working on the main project.
-
-The `updateTime` is useful to know when the package was last updated. This would
-be typically updated and otherwise managed by the tooling.
-
-The `arch` and `os` optional properties allow you to filter the operating systems
-and architectures to install a package with.
 
 The `flatten` property tells any tooling that this import should only be in the
 top level `vendor` directory.
