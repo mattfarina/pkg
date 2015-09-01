@@ -41,6 +41,7 @@ Some information describes the package itself. For example,
     "keywords": ["vendor", "package", "VCS"],
     "homepage": "https://example.com",
     "license": "MIT",
+    "flatten": true,
     "authors": [
         {
             "name": "Matt Butcher",
@@ -65,6 +66,9 @@ compatible license or a path to a file with the license. This is useful for tool
 that need to look over the packages in an application to determine license
 information.
 
+The `flatten` property tells any tools that all the imports should be in the top
+level `vendor/` directory.
+
 All of these properties are useful for applications that need to display or
 otherwise work with information about an application or package that's not
 part of the source for making the application run.
@@ -88,7 +92,8 @@ of objects containing details about a package. For example,
             "type": "git",
             "updateTime": "2015-04-09T05:06:17-08:00",
             "arch": ["386"],
-            "os": ["windows"]
+            "os": ["windows"],
+            "flatten": true
         }
     ]
 }
@@ -115,6 +120,9 @@ be typically updated and otherwise managed by the tooling.
 
 The `arch` and `os` optional properties allow you to filter the operating systems
 and architectures to install a package with.
+
+The `flatten` property tells any tooling that this import should only be in the
+top level `vendor` directory.
 
 ## Vendoring?
 
