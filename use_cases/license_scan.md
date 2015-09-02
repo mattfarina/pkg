@@ -4,6 +4,12 @@ When I have a package or application that uses other packages I need a way to
 automatically look through all the licenses in use among all the packages in my
 application.
 
+This commonly occurs for:
+
+* Sarbanes-Oxley reviews
+* Merger/Acquisition due diligence
+* Legal complaince
+
 ## Notes
 - [SPDX](http://spdx.org/) provides a list of common open source licenses.
 

@@ -1,5 +1,11 @@
 # Use Cases
 
+A package is a bundle of source code. But as developers, we often need
+to know more about the package than what is immediately apparent from
+the code. The challenge of any suitable package metadata standard is to
+capture the information that is important to package users, but is not
+overly onerous for package maintainers to collect and maintain.
+
 This directory shares a set of use cases for tooling (e.g. Go package managers)
 to solve that need specification information. Part of this is to identify the
 information not available today to solve the use cases. [If you have any feedback
@@ -15,3 +21,4 @@ Current use cases:
 * [As a developer on a team, we can have the same setup to retrieve packages.](consistent_team_setup_with_private.md)
 * [As a developer, I can easily scan my package tree to know the licenses in use.](license_scan.md)
 * [As an application, I can find general information about a package.](application_information.md)
+* [As a developer, I can contact a package's owner](contact_owners.md)

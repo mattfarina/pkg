@@ -7,6 +7,8 @@ I need a process to update to newer versions of the dependency.
 - Vendoring, as described on StackOverflow (with a Ruby specific case):
   > Vendoring is the moving of all 3rd party items such as plugins, gems and even rails into the /vendor directory.
 - Vendor packages are those from a 3rd party. The 3rd party is the vendor.
+- Many organizations balk at the idea of storing external dependencies
+  directly in their VCS. Reasons range from technical to legal.
 
 ## Solution
 The `version` property associated with any import allows a version to be set. A

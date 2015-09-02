@@ -34,6 +34,10 @@ These other package managers include [npm](http://npmjs.com/) (for Node.js),
 and [Ruby Gems](https://rubygems.org), and others. This is a well worn path
 we can learn from.
 
+Of course, much can also be learned from the venerable operating system
+package managers like RPM and dpkg, which have long been used to manage
+development libraries.
+
 ## Use Cases
 
 At this point the focus is on use cases that need to be solved. The requirements are

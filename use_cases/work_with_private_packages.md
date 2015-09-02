@@ -11,6 +11,8 @@ my SSH keys when accessing the repository.
   (for PHP) and [npm](https://docs.npmjs.com/files/package.json#repository) (for Node.js),
   provide a means to specify a repository. This does it a little different as it
   can be associated with each import.
+- Providing this data as part of package metadata eliminates the need
+  for a second file (such as `~/.netrc`) that must do that mapping.
 
 ## Solution
 The json configuration allows one to specify the the repository. For example,

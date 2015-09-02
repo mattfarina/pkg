@@ -12,13 +12,16 @@ database driver, where only one package should be used across everything.
   in the `$GOPATH`, and finally looks in the `$GOROOT`.
 - A simple use case is the Deis project that has multiple packages and
   sub-packages importing Docker. They only need this to happen one time.
+- Certain frameworks in Go's core, such as the `database/sql` package,
+  are prone to issues when unflattened dependencies result in loading
+  two or more versions of the same driver library.
 
 ## Solution
 There are two `flatten` properties. One at the package level that notes that all
 packages should only be installed at the top level (e.g., the application
 `vendor/` directory).
 
-The `flatten` property on individual imports can be used instead of the global
+The `flatten` property on individual imports can be used to override the global
 `flatten` property. This notes that this particular import should be at the top
 level.
 

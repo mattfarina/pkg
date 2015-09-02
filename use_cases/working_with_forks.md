@@ -7,8 +7,10 @@ to `github.com/myaccount/foo` and made some changes. But, I still want to use
 
 ## Notes
 - A simple example of this is forking an application, wanting to use a change,
-  and submitting a pull request to the original at the same time.
-- This fixes the import rewriting problem something seen in Go.
+  and submitting a pull request to the original at the same time. For
+  some short period of time, a fork may be used while waiting for a
+  stable upstream release.
+- This fixes the import rewriting problem sometimes seen in Go.
 
 ## Solution
 In this case the `repository` can be set to an alternative location, such as my
