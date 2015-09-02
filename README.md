@@ -34,6 +34,12 @@ These other package managers include [npm](http://npmjs.com/) (for Node.js),
 and [Ruby Gems](https://rubygems.org), and others. This is a well worn path
 we can learn from.
 
+## Use Cases
+
+At this point the focus is on use cases that need to be solved. The requirements are
+needed to understand what needs to be built and solved. The use cases are currently being
+documented in the [use cases](use_cases) sub-directory.
+
 ## Package Information
 
 Some information describes the package itself. For example,
