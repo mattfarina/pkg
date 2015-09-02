@@ -1,6 +1,8 @@
 # As a developer, I want to use a specific version of a package.
 
-I need to be able to choose the version or version constraint of a package.
+I need to be able to choose the version or version constraint of a package. If a
+package has dependent packages I need those properly fetched and their versions
+set.
 
 ## Notes
 - Common methods for versions are VCS branches, tags, and commit ids.
