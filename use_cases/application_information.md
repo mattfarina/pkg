@@ -1,4 +1,4 @@
-# As an application, I can find general information about an application.
+# As an application, I can find general information about a package.
 
 Applications and packages written in Go have a wide variety of meta-information
 surrounding them such as name, an image, a homepage other than the package
