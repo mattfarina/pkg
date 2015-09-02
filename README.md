@@ -138,3 +138,4 @@ Todo:
 - [ ] Update package to create and update `pkg.json` files.
 - [ ] Create validator for `pkg.json` files.
 - [ ] Add BSD license details.
+- [ ] Decide where this should live.
