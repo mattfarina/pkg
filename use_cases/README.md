@@ -1,8 +1,9 @@
 # Use Cases
 
-This directory shares a set of use cases for a package management system and
-specification to be able to handle for Go. [If you have any feedback please
-feel free to share](https://github.com/mattfarina/pkg/issues).
+This directory shares a set of use cases for tooling (e.g. Go package managers)
+to solve that need specification information. Part of this is to identify the
+information not available today to solve the use cases. [If you have any feedback
+please feel free to share](https://github.com/mattfarina/pkg/issues).
 
 Current use cases:
 

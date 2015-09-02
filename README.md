@@ -3,8 +3,8 @@
 This outlines a proposed manner for documenting the metadata associated
 with a Go package. The current examples use json but that's not a requirement.
 Instead, the goal is to solve the [use cases](use_cases). Proposed changes
-are welcome. The goal is to be able to solve the use cases rather than stick
-to one way of doing things.
+are welcome. Ideally, there would be one format for documenting the information
+that numerous tools (e.g. package managers) could all use and share.
 
 For example,
 ```json
@@ -132,7 +132,9 @@ This is currently a work in progress.
 
 Todo:
 
-- [ ] Write use cases.
+- [x] Write initial use cases.
+- [ ] Get feedback on use cases and refine.
 - [ ] Create package to read `pkg.json` files.
+- [ ] Update package to create and update `pkg.json` files.
 - [ ] Create validator for `pkg.json` files.
 - [ ] Add BSD license details.
