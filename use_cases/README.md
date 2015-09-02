@@ -6,7 +6,7 @@ feel free to share](https://github.com/mattfarina/pkg/issues).
 
 Current use cases:
 
-* [As a developer, I can retrieve private packages.](working_with_private_packages.md)
+* [As a developer, I can retrieve private packages.](work_with_private_packages.md)
 * [As a developer, I want to fork a Go package and use my fork.](working_with_forks.md)
 * [As a developer, I want to have a single version of an import for my application and all dependencies.](single_import.md)
 * [As a developer, store dependent packages in my VCS and update them.](managed_vendored_dependencies.md)
