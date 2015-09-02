@@ -13,6 +13,10 @@ between major version changes (e.g. 1.X to 2.x), three things are clear:
 3. Developers cannot and should not rely upon external parties to retain
    backwards compatibility.
 
+I need to be able to choose the version or version constraint of a package. If a
+package has dependent packages I need those properly fetched and their versions
+set.
+
 ## Notes
 - Common methods for versions are VCS branches, tags, and commit ids.
 - Common methods for version constraints are [Semantic Version](http://semver.org/)
@@ -21,7 +25,7 @@ between major version changes (e.g. 1.X to 2.x), three things are clear:
   `github.com/hashicorp/go-version`.
 - Other language tools that support versions and version constraints this way
   include npm (for Node.js), Composer (for PHP), and Bundler (for Ruby).
-  Cargo (for Rust) does not appear to support constraints. 
+  Cargo (for Rust) does not appear to support constraints.
 - This is also a standard feature of package managers for operating
   systems (including their `-dev` packages), including Apt and RPM.
 
