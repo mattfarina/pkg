@@ -56,7 +56,7 @@ Some information describes the package itself. For example,
     "homepage": "https://example.com",
     "license": "MIT",
     "flatten": true,
-    "authors": [
+    "owners": [
         {
             "name": "Matt Butcher",
             "email": "something@example.com",
