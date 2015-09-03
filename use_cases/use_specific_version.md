@@ -5,17 +5,19 @@ specify, with a high degree of reliability, which version or versions of
 that package work with my application.
 
 While it is a common idiom in Go to not make breaking API chanages
-between major version changes (e.g. 1.X to 2.x), three things are clear:
+between major version changes (e.g. 1.x to 2.x), two things are clear:
 
 1. Even small "non-breaking" changes have a tendency to break things.
 2. Many large and established projects (such as Docker) simply ignore
    this practice.
-3. Developers cannot and should not rely upon external parties to retain
-   backwards compatibility.
 
-I need to be able to choose the version or version constraint of a package. If a
-package has dependent packages I need those properly fetched and their versions
-set.
+These two basic premises are sufficient to guarantee that a project living
+in the real, loosely-coupled Go library ecosystem, simply cannot rely on
+external parties to retain backwards compatibility.
+
+Thus, I need to be able to choose the version or version constraint of a
+package. If a package has dependent packages I need those properly fetched
+and their versions set.
 
 ## Notes
 - Common methods for versions are VCS branches, tags, and commit ids.

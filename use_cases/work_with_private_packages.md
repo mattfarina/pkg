@@ -30,5 +30,5 @@ The json configuration allows one to specify the the repository. For example,
 }
 ```
 
-Here the the dependent package will be checked out from `git@github.com:example/private.git`
+Here the dependent package will be checked out from `git@github.com:example/private.git`
 to the location `github.com/example/private`. SSH keys will be properly used.
