@@ -7,7 +7,7 @@ database driver, where only one package should be used across everything.
 ## Notes
 - Dependency versions come into play and any tooling will need to make this
   easy to work with.
-- Looking for a dependency starts in a packages immediate `vendor/` directory,
+- Looking for a dependency starts in a package’s immediate `vendor/` directory,
   starts going up the package tree looking in `vendor/` directories, then looks
   in the `$GOPATH`, and finally looks in the `$GOROOT`.
 - A simple use case is the Deis project that has multiple packages and
