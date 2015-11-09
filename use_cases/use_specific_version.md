@@ -1,10 +1,10 @@
-# As a developer, I want to use a specific version of a package.
+# As a developer, I want to use a version or version range.
 
 For any given package upon which my application depends, I need to be able to
 specify, with a high degree of reliability, which version or versions of
 that package work with my application.
 
-While it is a common idiom in Go to not make breaking API chanages
+While it is a common idiom in Go to not make breaking API changes
 between major version changes (e.g. 1.x to 2.x), two things are clear:
 
 1. Even small "non-breaking" changes have a tendency to break things.
@@ -24,7 +24,7 @@ and their versions set.
 - Common methods for version constraints are [Semantic Version](http://semver.org/)
   ranges. For example `">= 1.0, < 1.4"`.
 - There are Go packages today that support constraints checking such as
-  `github.com/hashicorp/go-version`.
+  `github.com/Masterminds/semver`.
 - Other language tools that support versions and version constraints this way
   include npm (for Node.js), Composer (for PHP), and Bundler (for Ruby).
   Cargo (for Rust) does not appear to support constraints.

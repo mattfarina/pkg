@@ -129,6 +129,40 @@ The `repository` and `type` information are useful for a couple reasons includin
 The `flatten` property tells any tooling that this import should only be in the
 top level `vendor` directory.
 
+## Version Locking
+
+When you can support version ranges it's useful to lock to a specific version
+of each package in the dependency tree. This is supported through the use of a
+`pkg.lock` file containing the locking information.
+
+```json
+{
+    "hash": "2cb908fb4479bec8ed4fb8b6e719207fcf11d97e",
+    "updated": "2006-01-02T15:04:05Z07:00",
+    "imports":[
+        {
+            "name": "github.com/Masterminds/semver",
+            "version": "6333b7bd29aad1d79898ff568fd90a8aa533ae82"
+        },
+        {
+            "name": "github.com/Masterminds/vcs",
+            "version": "eaee272c8fa4514e1572e182faecff5be20e792a"
+        }
+    ]
+}
+```
+
+The `hash` property is a sha256 hash of the `pkg.json` file. This is used to
+make sure the `pkg.lock` file is in sync with the `pkg.json` file. When they are
+not in sync the `pkg.lock` information should not be used until the `pkg.lock`
+is regenerated with the based on the current `pkg.json` file. `updated` provides
+a timestamp in [RFC 3339](http://tools.ietf.org/html/rfc3339) format for the
+last time the `pkg.lock` file was generated.
+
+The `imports` property is a list of all the packages in the entire dependency
+tree along with the specific version, as opposed to version range, the project
+is locked to.
+
 ## Vendoring?
 
 Vendoring, where the code from the dependent package is stored in the parent
