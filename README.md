@@ -55,7 +55,6 @@ Some information describes the package itself. For example,
     "keywords": ["vendor", "package", "VCS"],
     "homepage": "https://example.com",
     "license": "MIT",
-    "flatten": true,
     "owners": [
         {
             "name": "Matt Butcher",
@@ -80,9 +79,6 @@ compatible license or a path to a file with the license. This is useful for tool
 that need to look over the packages in an application to determine license
 information.
 
-The `flatten` property tells any tools that all the imports should be in the top
-level `vendor/` directory.
-
 All of these properties are useful for applications that need to display or
 otherwise work with information about an application or package that's not
 part of the source for making the application run.
@@ -104,7 +100,6 @@ of objects containing details about a package. For example,
             "version": "1.2.0",
             "repository": "git@github.com:Masterminds/cookoo.git",
             "type": "git",
-            "flatten": true
         }
     ]
 }
@@ -125,9 +120,6 @@ The `repository` and `type` information are useful for a couple reasons includin
 2. Forks. For example what if the `repository` were `git@github.com:mattfarina/cookoo.git`.
 3. When you want to checkout a dependency in a manner you can commit and push
    changes while working on the main project.
-
-The `flatten` property tells any tooling that this import should only be in the
-top level `vendor` directory.
 
 ## Version Locking
 
