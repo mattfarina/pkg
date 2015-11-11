@@ -169,7 +169,7 @@ This is currently a work in progress.
 Todo:
 
 - [x] Write initial use cases.
-- [ ] Get feedback on use cases and refine.
+- [x] Get feedback on use cases and refine.
 - [ ] Create package to read `pkg.json` files.
 - [ ] Update package to create and update `pkg.json` files.
 - [ ] Create validator for `pkg.json` files.
