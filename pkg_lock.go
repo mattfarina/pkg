@@ -13,7 +13,7 @@ type Lock struct {
 
 	// LockedPackages is a slice of all the packages used within a project. That
 	// includes the packages imported packages. The entire dependency tree.
-	LockedPackages []LockedPackage `json:"imports"`
+	LockedPackages []*LockedPackage `json:"imports"`
 }
 
 // LockedPackage represents a single locked package.

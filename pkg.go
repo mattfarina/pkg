@@ -29,11 +29,11 @@ type Pkg struct {
 	// Owners is an array of owners for a project. See the Owner type for
 	// more detail. These can be one or more people, companies, or other
 	// organizations.
-	Owners []Owner `json:"owners,omitempty"`
+	Owners []*Owner `json:"owners,omitempty"`
 
 	// Imports are the packages imported by this project. For more detail see
 	// the Import type.
-	Imports []Import `json:"imports"`
+	Imports []*Import `json:"imports,omitempty"`
 
 	// DevImports are the imports needed for testing or other development
 	// activities. See the Import type for more detail.
@@ -77,4 +77,16 @@ type Import struct {
 	// will be git, svn, hg, and bzr representing the four most popular types
 	// of version control systems.
 	Type string `json:"type,omitempty"`
+
+	// Subpackages is a slice of any subpackages that will be used by the
+	// tooling.
+	Subpackages []string `json:"subpackages,omitempty"`
+
+	// Arch is a slice of the architecture this package should be fetched for.
+	// This allows for filtering by architecture.
+	Arch []string `json:"arch,omitempty"`
+
+	// OS is a slice of the operating systems this package should be fetched for.
+	// This allows for filtering by OS.
+	Os []string `json:"os,omitempty"`
 }

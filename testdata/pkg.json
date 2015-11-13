@@ -1,0 +1,40 @@
+{
+    "name": "github.com/mattfarina/pkg",
+    "image": "foo.png",
+    "description": "A package definition for Go.",
+    "keywords": ["vendor", "package"],
+    "homepage": "https://example.com",
+    "license": "MIT",
+    "owners": [
+        {
+            "name": "Matt Butcher",
+            "email": "something@example.com",
+            "homepage": "http://technosophos.com"
+        },
+        {
+            "name": "Matt Farina",
+            "email": "other@example.com",
+            "homepage": "http://mattfarina.com"
+        }
+    ],
+    "imports": [
+        {
+            "name": "github.com/Masterminds/vcs"
+        },
+        {
+            "name": "github.com/Masterminds/semver",
+            "version": "v1.0.0"
+        },
+        {
+            "name": "github.com/Masterminds/cookoo",
+            "version": "1.2.0",
+            "repository": "git@github.com:Masterminds/cookoo.git",
+            "type": "git"
+        }
+    ],
+    "devImports": [
+        {
+            "name": "github.com/golang/lint"
+        }
+    ]
+}

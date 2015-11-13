@@ -1,0 +1,5 @@
+{
+    "name": "github.com/Masterminds/pkg",
+    "description": "A package definition for Go.",
+    "keywords": ["vendor", "package"]
+}
