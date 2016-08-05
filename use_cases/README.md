@@ -23,3 +23,4 @@ Current use cases:
 * [As a developer, I can easily scan my package tree to know the licenses in use.](license_scan.md)
 * [As an application, I can find general information about a package.](application_information.md)
 * [As a developer, I can contact a package's owner](contact_owners.md)
+* [As a project maintainer, I can pick and choose which vendored dependencies are committed to VCS](pick_and_choose.md)
